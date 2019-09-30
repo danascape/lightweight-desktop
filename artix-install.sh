@@ -23,6 +23,7 @@ termite \
 rofi \
 slock \
 $(pacman -Ssq ttf-) \
+zsh-syntax-highlighting \
 xorg-xinit
 
 # Obtain files

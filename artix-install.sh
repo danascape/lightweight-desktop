@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Fix keyring
+sudo pacman -S --noconfirm artix-keyring
+sudo pacman -S --noconfirm archlinux-keyring
+sudo pacman -S --noconfirm artix-keyring
+
 # Install deps
 sudo pacman -S --noconfirm --needed \
 base \
@@ -23,6 +28,7 @@ git clone https://git.stykers.moe/scm/~stykers/configuration.git ~/.kat
 cd ~/.kat 
 wget -q https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 mv install.sh ohmyz.sh
+mkdir ~/.config
 
 # Modify files
 cp agetty-tty7/conf.gen agetty-tty7/conf

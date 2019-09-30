@@ -49,6 +49,7 @@ echo "================================================="
 sudo ln -sf /etc/runit/sv /etc/sv
 sudo ln -sf /var/run/runit/service /var/service
 sudo ln -sf $HOME/.kat/agetty-tty7 /etc/sv/
+sudo ln -sf /etc/sv/agetty-tty7 /var/service/
 sudo ln -sf $HOME/.kat/dbus/allow-all.conf /etc/dbus-1/system.d/allow-all.conf
 sudo ln -sf $HOME/.kat/Phoeton /usr/share/icons/Phoeton
 

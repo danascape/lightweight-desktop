@@ -26,6 +26,7 @@ termite \
 rofi \
 slock \
 arc-gtk-theme \
+maim \
 $(pacman -Ssq ttf-) \
 zsh-syntax-highlighting \
 xorg-xinit

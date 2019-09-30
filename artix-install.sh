@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Refresh repositories
+sudo pacman -Sy
+
 # Fix keyring
 sudo pacman -S --noconfirm artix-keyring
 sudo pacman -S --noconfirm archlinux-keyring

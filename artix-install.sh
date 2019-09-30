@@ -21,6 +21,8 @@ gtk2 \
 gtk3 \
 termite \
 rofi \
+slock \
+$(pacman -Ssq ttf-) \
 xorg-xinit
 
 # Obtain files

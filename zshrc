@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="$HOME/.oh-my-zsh"
+  export ZSH="/home/Stykers/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -62,7 +62,7 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux cp git ruby docker catimg go mvn repo vagrant nmap node npm perl python rsync screen sublime sudo yarn zsh_reload)
+plugins=(archlinux cp git ruby docker adb catimg firewalld go mvn repo vagrant nmap node npm perl python rsync screen sublime sudo yarn zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,6 +117,9 @@ export TERM=xterm
 # auto sudo on service
 alias sv="sudo /usr/bin/sv";
 
+# ipinfo shortcut
+alias ipinfo="curl -fsSL https://ipinfo.io"
+
 # export dbus socket path
 export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/dbus/system_bus_socket'
 
@@ -124,3 +127,4 @@ export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/dbus/system_bus_socket'
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty7" ]; then
 exec startx
 fi
+

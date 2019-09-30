@@ -63,6 +63,9 @@ ln -sf ~/.kat/xinitrc ~/.xinitrc
 ln -sf ~/.kat/Xresources ~/.Xresources
 ln -sf ~/.kat/zshrc ~/.zshrc
 
+# Change shell
+sudo chsh -s /bin/zsh $(whoami)
+
 # Tell user to reboot and exit
 echo "================================================="
 echo "Installation finished! Please reboot the system."

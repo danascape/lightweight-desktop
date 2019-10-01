@@ -62,6 +62,7 @@ sudo ln -sf $HOME/.kat/dbus/allow-all.conf /etc/dbus-1/system.d/allow-all.conf
 sudo ln -sf $HOME/.kat/Phoeton /usr/share/icons/Phoeton
 
 # Setup user links
+mkdir ~/.config/gtk-3.0
 ln -sf ~/.kat/awesome ~/.config/awesome
 ln -sf ~/.kat/compton.conf ~/.config/compton.conf
 ln -sf ~/.kat/gtkrc ~/.config/gtkrc
@@ -70,6 +71,8 @@ ln -sf ~/.kat/termite ~/.config/termite
 ln -sf ~/.kat/xinitrc ~/.xinitrc
 ln -sf ~/.kat/Xresources ~/.Xresources
 ln -sf ~/.kat/zshrc ~/.zshrc
+ln -sf ~/.kat/gtk-settings.ini ~/.config/gtk-3.0/settings.ini
+ln -sf ~/.kat/gtk.css ~/.config/gtk-3.0/gtk.css
 
 # Change shell
 sudo chsh -s /bin/zsh $(whoami)

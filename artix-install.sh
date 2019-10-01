@@ -27,6 +27,7 @@ rofi \
 slock \
 arc-gtk-theme \
 maim \
+i3lock-color \
 $(pacman -Ssq ttf-) \
 zsh-syntax-highlighting \
 xorg-xinit

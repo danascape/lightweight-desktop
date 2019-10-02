@@ -28,6 +28,8 @@ slock \
 arc-gtk-theme \
 maim \
 i3lock-color \
+imagemagick \
+scrot \
 $(pacman -Ssq ttf-) \
 zsh-syntax-highlighting \
 xorg-xinit

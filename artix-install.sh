@@ -42,6 +42,7 @@ cd ~/.kat
 wget -q https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 mv install.sh ohmyz.sh
 mkdir ~/.config
+echo "bureau" > ~/.config/zsh_theme
 
 # Modify files
 cp agetty-tty7/conf.gen agetty-tty7/conf

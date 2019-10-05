@@ -1,10 +1,3 @@
---[[
-
-     Licensed under GNU General Public License v2
-      * (c) 2016, Luca CPZ
-
---]]
-
 local helpers = require("lain.helpers")
 local shell   = require("awful.util").shell
 local wibox   = require("wibox")

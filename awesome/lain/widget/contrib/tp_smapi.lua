@@ -1,11 +1,3 @@
---[[
-
-     Licensed under GNU General Public License v2
-      * (c) 2018, Luca CPZ
-      * (c) 2013, Conor Heine
-
---]]
-
 local helpers = require("lain.helpers")
 local focused = require("awful.screen").focused
 local gears   = require("gears")

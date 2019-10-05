@@ -1,10 +1,3 @@
---[[
-
-     Licensed under GNU General Public License v2
-      * (c) 2013, Jan Xie
-
---]]
-
 local helpers = require("lain.helpers")
 local markup  = require("lain.util").markup
 local awful   = require("awful")

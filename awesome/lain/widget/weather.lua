@@ -1,10 +1,3 @@
---[[
-
-     Licensed under GNU General Public License v2
-      * (c) 2015, Luca CPZ
-
---]]
-
 local helpers  = require("lain.helpers")
 local json     = require("lain.util").dkjson
 local focused  = require("awful.screen").focused

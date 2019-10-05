@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bureau"
+ZSH_THEME="$(cat ~/.config/zsh_theme)"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,9 +108,6 @@ export VAGRANT_DEFAULT_PROVIDER="libvirt"
 # set haste server
 export HASTE_SERVER="https://paste.stykers.moe"
 
-# highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # terminal type
 export TERM=xterm
 
@@ -121,10 +118,13 @@ alias sv="sudo /usr/bin/sv";
 alias ipinfo="curl -fsSL https://ipinfo.io"
 
 # export dbus socket path
-export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/dbus/system_bus_socket'
+# export DBUS_SESSION_BUS_ADDRESS='unix:path=/run/dbus/system_bus_socket'
 
 # auto startx on tty7
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty7" ]; then
-exec startx
+exec dbus-run-session startx > $HOME/.kat.log 2>&1
 fi
+
+# highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

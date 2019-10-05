@@ -234,7 +234,7 @@ root.buttons(my_table.join(
 -- {{{ Key bindings
 globalkeys = my_table.join(
     -- Take a screenshot
-    awful.key({ altkey }, "p", function() awful.util.spawn_with_shell("maim -s ~/Pictures/Screenshots/$(date +%s).png") end,
+    awful.key({ altkey }, "p", function() awful.spawn.with_shell("maim -s ~/Pictures/Screenshots/$(date +%s).png") end,
               {description = "take a screenshot", group = "hotkeys"}),
 
     -- X screen locker

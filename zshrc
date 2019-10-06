@@ -125,6 +125,12 @@ if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty7" ]; then
 exec dbus-run-session startx > $HOME/.kat.log 2>&1
 fi
 
+# telegram cleanup
+alias tg_cleanup="rm -rf /tmp/telegram/*.jarvis /tmp/telegram/sticker*"
+
+# custom config
+source ~/.config/zsh_config
+
 # highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

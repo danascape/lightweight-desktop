@@ -75,6 +75,7 @@ local gui_editor   = "subl"
 local browser      = "chromium"
 local guieditor    = "subl"
 local scrlocker    = "slock"
+local telegram     = "telegram-desktop"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
@@ -492,6 +493,8 @@ end,
               {description = "run browser", group = "launcher"}),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end,
               {description = "run gui editor", group = "launcher"}),
+    awful.key({ modkey }, "c", function () awful.spawn(telegram) end,
+              {description = "run telegram", group = "launcher"}),
 
     -- Default
     --[[ Menubar

@@ -122,7 +122,7 @@ alias ipinfo="curl -fsSL https://ipinfo.io"
 
 # auto startx on tty7
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty7" ]; then
-exec dbus-run-session startx > $HOME/.kat.log 2>&1
+exec startx > $HOME/.kat.log 2>&1
 fi
 
 # telegram cleanup

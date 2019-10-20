@@ -66,6 +66,7 @@ sudo ln -sf /var/run/runit/service /var/service
 sudo ln -sf $HOME/.kat/agetty-tty7 /etc/sv/
 sudo ln -sf /etc/sv/agetty-tty7 /var/service/
 sudo ln -sf $HOME/.kat/Phoeton /usr/share/icons/Phoeton
+sudo ln -sf $HOME/.kat/profile.sh /etc/profile.d/Kat.sh
 
 # Setup user links
 mkdir ~/.config/gtk-3.0

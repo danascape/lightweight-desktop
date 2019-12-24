@@ -14,4 +14,9 @@ In the [Seat: *] section, find the **greeter-session** keyword, then fill in lig
 
 then run `lightdm --test-mode --debug` .
  
-if no error occurs the lightdm installation has been successful and you can try it by restarting your system with `reboot` command.
+If no error occurs the lightdm installation has been successful and you can try it by restarting your system with `reboot` command.
+ 
+If you have installation problems email me at <a href="saalimquadri1@gmail.com">saalimquadri</a> or message me on telegram at <a href="https://t.me/gaabyintegral">@gabbyintegral</a>.
+
+**<h2 align="center">Credits</h2>**
+  Huge thanks to <a href="https://t.me/MonolithicKat">@MonolithicKat</a>/stykers.moe for initial files.

@@ -31,7 +31,6 @@ i3lock-color \
 imagemagick \
 scrot \
 lm_sensors \
-lm_sensors-runit \
 $(pacman -Ssq ttf-) \
 zsh-syntax-highlighting \
 xorg-xinit

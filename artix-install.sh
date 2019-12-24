@@ -38,7 +38,7 @@ lightdm \
 lightdm-gtk-greeter
 
 # Obtain files
-git clone https://git.stykers.moe/scm/~stykers/configuration.git ~/.kat
+git clone https://github.com/iamsaalim/lightweight-desktop ~/.kat
 cd ~/.kat 
 wget -q https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 mv install.sh ohmyz.sh

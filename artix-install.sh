@@ -33,7 +33,9 @@ scrot \
 lm_sensors \
 $(pacman -Ssq ttf-) \
 zsh-syntax-highlighting \
-xorg-xinit
+xorg-xinit \
+lightdm \
+lightdm-gtk-greeter
 
 # Obtain files
 git clone https://git.stykers.moe/scm/~stykers/configuration.git ~/.kat
@@ -48,6 +50,9 @@ touch ~/.config/zsh_config
 cp agetty-tty7/conf.gen agetty-tty7/conf
 sed -i s/Stykers/$(whoami)/g agetty-tty7/conf
 cp awesome/theme/theme.gen.lua awesome/theme/theme.lua
+
+# Symlink package
+systemctl enable lightdm
 
 # Install OhMyZsh
 sh ohmyz.sh --unattended >> /dev/null

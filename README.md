@@ -2,7 +2,7 @@
 
 ## basic script to install a light weight desktop environment
 
-After running script
+After running `artix-install.sh`
 
 Set **lightdm** to load the greeter we want.
 
